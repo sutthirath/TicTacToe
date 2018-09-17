@@ -1,0 +1,156 @@
+
+body {
+    background-color: #FF8100;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 20% auto 5% auto 5% auto 20%;
+    grid-template-rows: 20% auto 5% auto 5% auto 20%;
+    grid-template-areas: 
+        "header     header          header  header          header  header          header"
+        "leftSide          boxTopLeft      hash1v  boxTopMid       hash2v  boxTopRight     rightSide"
+        ".          hash1h          hash1v  hash2h          hash2v  hash3h          ."
+        ".          boxMidLeft      hash1v  boxMiddle       hash2v  boxMidRight     ."
+        ".          hash4h          hash1v  hash5h          hash2v  hash6h          ."
+        ".          boxBottomLeft   hash1v  boxBottomMid    hash2v  boxBottomRight  ."
+        "footer     footer          footer  footer          footer  footer          footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.title {
+    font-weight: 200;
+    font-size: 4em;
+    text-align: center;
+}
+
+.leftSide {
+    grid-area: leftSide;
+}
+
+.rightSide {
+    grid-area: rightSide;
+}
+
+.btn {
+    visibility: visible;
+}
+
+.users {
+    visibility: hidden;
+}
+
+.hash {
+    background-color: white;
+}
+
+.hash1v {
+    grid-area: hash1v;
+    border-radius: 50px;
+}
+
+.hash2v {
+    grid-area: hash2v;
+    border-radius: 50px;
+}
+
+.hash1h {
+    grid-area: hash1h;
+    border-radius: 50px 0 0 50px;
+    height: 7vh;
+}
+
+.hash2h {
+    grid-area: hash2h;
+    color: white;
+}
+
+.hash3h {
+    grid-area: hash3h;
+    border-radius: 0 50px 50px 0;
+    color: white;
+}
+
+.hash4h {
+    grid-area: hash4h;
+    border-radius: 50px 0 0 50px;
+    height: 7vh;
+}
+
+.hash5h {
+    grid-area: hash5h;
+    color: white;
+}
+
+.hash6h {
+    grid-area: hash6h;
+    border-radius: 0 50px 50px 0;
+    color: white;
+}
+
+.board {
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 7em;
+}
+
+.boxTopLeft {
+    grid-area: boxTopLeft;
+}
+
+.boxTopMid {
+    grid-area: boxTopMid;
+}
+
+.boxTopRight {
+    grid-area: boxTopRight;
+}
+
+.boxMidLeft {
+    grid-area: boxMidLeft;
+}
+
+.boxMiddle {
+    grid-area: boxMiddle;
+}
+
+.boxMidRight {
+    grid-area: boxMidRight;
+}
+
+.boxBottomLeft {
+    grid-area: boxBottomLeft;
+}
+
+.boxBottomMid {
+    grid-area: boxBottomMid;
+}
+
+.boxBottomRight {
+    grid-area: boxBottomRight;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    padding-top: 2em;
+}
+
+#reset {
+    padding: 1% 6%;
+    background-color: #FF8100;
+    font-weight: bolder;
+    color: white;
+    border: 3px solid white;
+    border-radius: 50px;
+    visibility: hidden;
+}
+
+
+
